@@ -32,5 +32,5 @@ jobs:
       # Step 3: Deploy to S3
       - name: Deploy to S3
         run: |
-          aws s3 sync . s3://your-bucket-name --delete
+          aws s3 sync . s3://realzzybucket --delete
           # The --delete flag removes files in the bucket that don't exist in your repository
